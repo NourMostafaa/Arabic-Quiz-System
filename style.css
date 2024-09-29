@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+
+}
+
+body {
+    background-color: #001e4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app h1 {
+    font-size: 27px;
+    color: #001e4d;
+    text-align: center;
+
+    width: 100%;
+}
+.app .num {
+    border-bottom: solid 1px #001e4d;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.app h2 {
+    font-size: 25px;
+    color: #001e4d;
+    text-align: start;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.btns .btn {
+    width: 100%;
+    text-align: start;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s ;
+}
+.btns .btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+}
+.btns .btn:disabled {
+    cursor: no-drop;
+}
+.btns .btn:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.next-back{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.next,.new{
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: all 0.2s;
+    color: white;
+    filter: contrast(85%);
+}
+
+.next {
+    background-color: rgb(28, 210, 28);
+}
+
+.new {
+    background-color: rgb(220, 34, 34);
+
+}
+
+.next:hover,.new:hover {
+        filter: contrast(100%);
+}
+
+.correct {
+    background-color: rgba(28, 210, 28, 0.476);
+
+}
+
+.wrong {
+    background-color: rgba(220, 34, 34, 0.561);
+}
+
+
+
+
+.footer {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media(max-width: 450px) {
+    .app h1 {
+        font-size: 22px;
+    }
+    .app .num {
+        font-size: 16px;
+    }
+    .app h2 {
+        font-size: 20px;
+    }
+    
+    .btns .btn {
+        font-size: 16px;
+    }
+    .app {
+        padding: 10px;
+    }
+    
+}
